@@ -54,4 +54,76 @@ Project Organization
 
 --------
 
+Certainly! Here's the revised version with instructions tailored for Windows users:
+
+---
+
+## Cloning the GitHub Repository
+
+To clone this GitHub repository to your local machine on Windows, follow these steps:
+
+1. Open Command Prompt or PowerShell.
+2. Navigate to the directory where you want to clone the repository using the `cd` command. For example:
+
+```bash
+cd path\to\desired\directory
+```
+
+3. Use the following command to clone the repository:
+
+```bash
+git clone https://github.com/your-username/repository-name.git
+```
+
+Replace `your-username` with your GitHub username and `repository-name` with the name of the repository you want to clone.
+
+4. Once the cloning process is complete, navigate into the cloned repository directory:
+
+```bash
+cd repository-name
+```
+
+## Creating a Python Environment
+
+This repository contains a `.tool-versions` file and a `requirements.txt` file to manage the Python environment using `pyenv` and `pip`. Follow these steps to create a Python environment on Windows:
+
+1. Ensure you have `pyenv-win` installed on your system. If not, you can download and install it from the [pyenv-win GitHub releases page](https://github.com/pyenv-win/pyenv-win/releases).
+
+2. Once `pyenv-win` is installed, navigate to the cloned repository directory in Command Prompt or PowerShell.
+
+3. Use the following command to set up the Python version specified in the `.tool-versions` file:
+
+```bash
+pyenv install $(type .tool-versions)
+```
+
+This will install the Python version specified in the `.tool-versions` file if it's not already installed on your system.
+
+4. After installing the required Python version, use the following command to create a virtual environment and activate it:
+
+```bash
+pyenv virtualenv $(type .tool-versions) <environment-name>
+```
+
+Replace `<environment-name>` with the desired name for your virtual environment.
+
+5. Activate the virtual environment by running:
+
+```bash
+pyenv local <environment-name>
+```
+
+6. Finally, install the Python dependencies listed in the `requirements.txt` file using `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
+Now you have successfully created a Python environment and installed the required dependencies for this repository on Windows.
+
+---
+
+These instructions should help Windows users set up the environment effectively. Let me know if you need further assistance!
+
+
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
