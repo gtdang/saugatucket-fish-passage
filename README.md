@@ -52,6 +52,8 @@ Project Organization
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
 
+
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 --------
 
 
@@ -120,7 +122,3 @@ Now you have successfully created a Python environment and installed the require
 
 ---
 
-These instructions should help Windows users set up the environment effectively. Let me know if you need further assistance!
-
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
