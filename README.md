@@ -54,9 +54,6 @@ Project Organization
 
 --------
 
-Certainly! Here's the revised version with instructions tailored for Windows users:
-
----
 
 ## Cloning the GitHub Repository
 
@@ -85,7 +82,7 @@ cd repository-name
 
 This repository contains a `.tool-versions` file and a `requirements.txt` file to manage the Python environment using `pyenv` and `pip`. Follow these steps to create a Python environment on Windows:
 
-1. Ensure you have `pyenv-win` installed on your system. If not, you can download and install it from the [pyenv-win GitHub releases page](https://github.com/pyenv-win/pyenv-win/releases).
+1. Ensure you have `pyenv-win` installed on your system. If not, follow installation instructions [pyenv-win GitHub](https://github.com/pyenv-win/pyenv-win?tab=readme-ov-file#installation).
 
 2. Once `pyenv-win` is installed, navigate to the cloned repository directory in Command Prompt or PowerShell.
 
