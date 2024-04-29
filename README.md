@@ -72,10 +72,8 @@ cd path\to\desired\directory
 3. Use the following command to clone the repository:
 
 ```bash
-git clone https://github.com/your-username/repository-name.git
+git clone https://github.com/gtdang/saugatucket-fish-passage.git
 ```
-
-Replace `your-username` with your GitHub username and `repository-name` with the name of the repository you want to clone.
 
 4. Once the cloning process is complete, navigate into the cloned repository directory:
 
