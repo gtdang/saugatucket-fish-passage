@@ -61,7 +61,7 @@ Project Organization
 
 To clone this GitHub repository to your local machine on Windows, follow these steps:
 
-1. Open Command Prompt or PowerShell.
+1. Open Command Prompt, PowerShell, or GitBash.
 2. Navigate to the directory where you want to clone the repository using the `cd` command. For example:
 
 ```bash
@@ -82,43 +82,28 @@ cd repository-name
 
 ## Creating a Python Environment
 
-This repository contains a `.tool-versions` file and a `requirements.txt` file to manage the Python environment using `pyenv` and `pip`. Follow these steps to create a Python environment on Windows:
+This repository contains an `environment.yml` file to create an environment with Anaconda:
 
-1. Ensure you have `pyenv-win` installed on your system. If not, follow installation instructions [pyenv-win GitHub](https://github.com/pyenv-win/pyenv-win/blob/master/docs/installation.md#installation).
-    2. If you have any problems running pyenv commands, follow the [Add System Settings](https://github.com/pyenv-win/pyenv-win/blob/master/docs/installation.md#add-system-settings) 
-   directions to update your environment and system variables. 
+1. Install [Anaconda](https://www.anaconda.com) or [miniconda](https://docs.anaconda.com/miniconda/) if you have not already.
 
-2. Once `pyenv-win` is installed, navigate to the cloned repository directory in Command Prompt or PowerShell.
-
-3. Use the following command to set up the Python version specified in the `.tool-versions` file:
+2. Use the following command create and activate the conda environment:
 
 ```bash
-pyenv install $(type .tool-versions)
+conda env create -f environment.yml
+conda activate sfp
 ```
 
-This will install the Python version specified in the `.tool-versions` file if it's not already installed on your system.
-
-4. After installing the required Python version, use the following command to create a virtual environment and activate it:
+3. Next install the data processing functions with the following command:
 
 ```bash
-pyenv virtualenv $(type .tool-versions) <environment-name>
+pip install -e . 
 ```
+This will allow us to import functions in our notebooks.
 
-Replace `<environment-name>` with the desired name for your virtual environment.
-
-5. Activate the virtual environment by running:
-
+## Launching jupyter lab 
+Net we launch the JuptyerLab IDE to run the notebooks in this project.
 ```bash
-pyenv local <environment-name>
+jupyter lab
 ```
-
-6. Finally, install the Python dependencies listed in the `requirements.txt` file using `pip`:
-
-```bash
-pip install -r requirements.txt
-```
-
-Now you have successfully created a Python environment and installed the required dependencies for this repository on Windows.
-
 ---
 
