@@ -45,7 +45,7 @@ def parse_file(input_file, output_dir, num_fields=15):
     output_csv_file = os.path.join(output_dir,
                                    f"{os.path.splitext(os.path.basename(input_file))[0]}"
                                    f"_detection.csv")
-    with open(output_csv_file, 'w', newline='') as csv_file:
+    with open(output_csv_file, 'w', newline='', encoding='utf-8') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerows(csv_lines)
 
@@ -53,7 +53,7 @@ def parse_file(input_file, output_dir, num_fields=15):
     output_non_matching_file = os.path.join(output_dir,
                                             f"{os.path.splitext(os.path.basename(input_file))[0]}"
                                             f"_non_detection.txt")
-    with open(output_non_matching_file, 'w') as non_matching_file:
+    with open(output_non_matching_file, 'w', encoding='utf-8') as non_matching_file:
         non_matching_file.write('\n'.join(non_matching_lines))
 
     # Output log file in CSV format
