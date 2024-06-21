@@ -93,12 +93,15 @@ conda env create -f environment.yml
 conda activate sfp
 ```
 
-3. Next install the data processing functions with the following command:
+3. Next install the data processing functions from the source code with the 
+following command:
 
 ```bash
 pip install -e . 
 ```
-This will allow us to import functions in our notebooks.
+This will allow us to import functions in our notebooks. The functions are 
+contained in the `src` directory/module in this project. 
+
 
 ## Launching jupyter lab 
 Net we launch the JuptyerLab IDE to run the notebooks in this project.
